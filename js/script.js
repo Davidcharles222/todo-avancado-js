@@ -105,7 +105,8 @@ const filterTodos = (filterValue) => {
 }
 
 // Eventos
-todoForm.addEventListener('submit' ,(e) => {
+todoForm.addEventListener('submit' ,(e) => {//o submit são para formulários, posso pegar o id direto do form e não do input, 
+o input já entende que o click é do botão.
     e.preventDefault()//bloqueia o envio de dados para backend, desta forma permite pegar valores do input
 
     const inputValue = todoInput.value;

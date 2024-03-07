@@ -11,6 +11,8 @@ body {
   background-image: url("../img/bg.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 button {

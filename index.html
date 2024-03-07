@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,13 +13,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="js/scripts.js" defer></script>
   </head>
   <body>
+
     <div class="todo-container">
       <header>
         <h1>Todo Avançado</h1>
       </header>
+
       <form id="todo-form">
         <p>Adicione sua tarefa</p>
         <div class="form-control">
@@ -33,6 +34,7 @@
           </button>
         </div>
       </form>
+
       <form id="edit-form" class="hide">
         <p>Edite sua tarefa</p>
         <div class="form-control">
@@ -43,6 +45,7 @@
         </div>
         <button id="cancel-edit-btn">Cancelar</button>
       </form>
+
       <div id="toolbar">
         <div id="search">
           <h4>Pesquisar:</h4>
@@ -53,6 +56,7 @@
             </button>
           </form>
         </div>
+
         <div id="filter">
           <h4>Filtrar:</h4>
           <select id="filter-select">
@@ -62,9 +66,10 @@
           </select>
         </div>
       </div>
+
       <div id="todo-list">
-        <!-- 
-          Template
+        
+          <!-- Template
           
           <div class="todo">
           <h3>Estou fazendo algo aqui...</h3>
@@ -77,8 +82,12 @@
           <button class="remove-todo">
             <i class="fa-solid fa-xmark"></i>
           </button>
+
         </div> -->
       </div>
+
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

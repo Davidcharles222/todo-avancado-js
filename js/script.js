@@ -80,23 +80,22 @@ const filterTodos = (filterValue) => {
 
     switch (filterValue){
         case 'all':
-            todos.forEach((todo) => (todo.style.display = 'flex'))
-            console.log('caiu aqui')
+            todos.forEach((todo) => (todo.style.display = 'flex')) //flex para aparecer as divs
             break
 
         case 'done':
             todos.forEach((todo) => {
                 todo.classList.contains('done') 
-                ? (todo.style.display = 'flex') 
-                : (todo.style.display = 'none')
+                ? (todo.style.display = 'flex') //flex só para aparecer a div,não interfere nos dados, definida css
+                : (todo.style.display = 'none') // esconder a div
             })
             break
         
         case 'todo':
             todos.forEach((todo) => {
                 !todo.classList.contains('done')
-                ? (todo.style.display = 'flex')
-                : (todo.style.display = 'none')
+                ? (todo.style.display = 'flex') //flex só para aparecer a div,não interfere nos dados, definida css
+                : (todo.style.display = 'none') // esconder a div
             })
             break
 

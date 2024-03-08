@@ -174,7 +174,8 @@ eraseBtn.addEventListener('click', (e) => {
 
     searchInput.value = searchInput.value.slice(0, -1)
 
-    searchInput.dispatchEvent(new Event('keyup'))
+    searchInput.dispatchEvent(new Event('keyup'))/*dispara novamente o evento de keyup para continuar a pesquisa, 
+    sem o dispatchEvent quando realizamos a busca e apagamos o input ele não retorna os valores da array*/
 })
 
 filterBtn.addEventListener('change', (e) => {//quando mudar
